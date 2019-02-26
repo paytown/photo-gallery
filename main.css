@@ -8,19 +8,29 @@ body {
     align-items: center;
     flex-direction: column;
     background: pink;
+    padding: 30px;
 }
 
 #image-gallery {
+    margin: 10px 0 0 0;
     display: flex;
-    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#image-gallery h2 {
+    font-size: 1.25em;
+    padding: 5px;
 }
 
 #image-gallery li {
+    overflow: hidden;
     width: 150px;
     height: 200px;
     background: salmon;
     list-style: none;
     margin: 5px;
+    text-align: center;
 }
 
 #image-gallery img {
