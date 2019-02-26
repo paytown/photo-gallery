@@ -3,12 +3,24 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: univers;
+    src: url('fonts/universltstd.otf');
+}
+
+@font-face {
+    font-family: universBold;
+    src: url('fonts/universltstd-bold.otf');
+}
+
 body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: pink;
+    background: #F7F0F5;
     padding: 30px;
+    font-family: univers;
+    color: #433633;
 }
 
 #image-gallery {
@@ -16,6 +28,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+h1 {
+    font-family: universBold;
 }
 
 #image-gallery h2 {
@@ -27,10 +43,17 @@ body {
     overflow: hidden;
     width: 150px;
     height: 200px;
-    background: salmon;
+    background: #e2cfbb;
     list-style: none;
     margin: 5px;
     text-align: center;
+    color: #5C5552;
+    border-radius: 2px;
+    border: 2px solid #8F857D;
+}
+
+#image-gallery li:hover {
+    background: #DECBB7;
 }
 
 #image-gallery img {
